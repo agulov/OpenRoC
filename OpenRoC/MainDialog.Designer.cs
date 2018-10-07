@@ -74,21 +74,24 @@
             // 
             // StatusStrip
             // 
+            this.StatusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StatusText});
-            this.StatusStrip.Location = new System.Drawing.Point(0, 377);
+            this.StatusStrip.Location = new System.Drawing.Point(0, 466);
             this.StatusStrip.Name = "StatusStrip";
-            this.StatusStrip.Size = new System.Drawing.Size(499, 22);
+            this.StatusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.StatusStrip.Size = new System.Drawing.Size(665, 25);
             this.StatusStrip.TabIndex = 0;
             // 
             // StatusText
             // 
             this.StatusText.Name = "StatusText";
-            this.StatusText.Size = new System.Drawing.Size(36, 17);
+            this.StatusText.Size = new System.Drawing.Size(46, 20);
             this.StatusText.Text = "ready";
             // 
             // MenuStrip
             // 
+            this.MenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AddButton,
             this.DeleteButton,
@@ -98,7 +101,7 @@
             this.MenuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.MenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip.Name = "MenuStrip";
-            this.MenuStrip.Size = new System.Drawing.Size(499, 22);
+            this.MenuStrip.Size = new System.Drawing.Size(665, 27);
             this.MenuStrip.TabIndex = 1;
             this.MenuStrip.Text = "toolStrip1";
             // 
@@ -109,7 +112,7 @@
             this.AddButton.Image = ((System.Drawing.Image)(resources.GetObject("AddButton.Image")));
             this.AddButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(33, 19);
+            this.AddButton.Size = new System.Drawing.Size(41, 24);
             this.AddButton.Text = "Add";
             this.AddButton.Click += new System.EventHandler(this.OnAddButtonClick);
             // 
@@ -120,7 +123,7 @@
             this.DeleteButton.Image = ((System.Drawing.Image)(resources.GetObject("DeleteButton.Image")));
             this.DeleteButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(44, 19);
+            this.DeleteButton.Size = new System.Drawing.Size(57, 24);
             this.DeleteButton.Text = "Delete";
             this.DeleteButton.Click += new System.EventHandler(this.OnContextMenuDeleteButtonClick);
             // 
@@ -131,7 +134,7 @@
             this.SettingsButton.Image = ((System.Drawing.Image)(resources.GetObject("SettingsButton.Image")));
             this.SettingsButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.SettingsButton.Name = "SettingsButton";
-            this.SettingsButton.Size = new System.Drawing.Size(53, 19);
+            this.SettingsButton.Size = new System.Drawing.Size(66, 24);
             this.SettingsButton.Text = "Settings";
             this.SettingsButton.Click += new System.EventHandler(this.OnSettingsButtonClick);
             // 
@@ -142,7 +145,7 @@
             this.LogsButton.Image = ((System.Drawing.Image)(resources.GetObject("LogsButton.Image")));
             this.LogsButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.LogsButton.Name = "LogsButton";
-            this.LogsButton.Size = new System.Drawing.Size(36, 19);
+            this.LogsButton.Size = new System.Drawing.Size(44, 24);
             this.LogsButton.Text = "Logs";
             this.LogsButton.Click += new System.EventHandler(this.OnLogButtonClick);
             // 
@@ -153,7 +156,7 @@
             this.AboutButton.Image = ((System.Drawing.Image)(resources.GetObject("AboutButton.Image")));
             this.AboutButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(44, 19);
+            this.AboutButton.Size = new System.Drawing.Size(54, 24);
             this.AboutButton.Text = "About";
             this.AboutButton.Click += new System.EventHandler(this.OnAboutButtonClick);
             // 
@@ -171,10 +174,11 @@
             this.ProcessListView.FullRowSelect = true;
             this.ProcessListView.GridLines = true;
             this.ProcessListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.ProcessListView.Location = new System.Drawing.Point(0, 22);
+            this.ProcessListView.Location = new System.Drawing.Point(0, 27);
+            this.ProcessListView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessListView.Name = "ProcessListView";
             this.ProcessListView.ShowGroups = false;
-            this.ProcessListView.Size = new System.Drawing.Size(499, 230);
+            this.ProcessListView.Size = new System.Drawing.Size(664, 282);
             this.ProcessListView.TabIndex = 2;
             this.ProcessListView.UseCompatibleStateImageBehavior = false;
             this.ProcessListView.View = System.Windows.Forms.View.Details;
@@ -199,6 +203,7 @@
             // 
             // RightClickContextMenuStrip
             // 
+            this.RightClickContextMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.RightClickContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ContextMenuAddButton,
             this.ContextMenuEditButton,
@@ -211,64 +216,64 @@
             this.ContextMenuShow});
             this.RightClickContextMenuStrip.Name = "ContextMenuStrip";
             this.RightClickContextMenuStrip.ShowImageMargin = false;
-            this.RightClickContextMenuStrip.Size = new System.Drawing.Size(139, 170);
+            this.RightClickContextMenuStrip.Size = new System.Drawing.Size(165, 184);
             // 
             // ContextMenuAddButton
             // 
             this.ContextMenuAddButton.Name = "ContextMenuAddButton";
-            this.ContextMenuAddButton.Size = new System.Drawing.Size(138, 22);
+            this.ContextMenuAddButton.Size = new System.Drawing.Size(164, 24);
             this.ContextMenuAddButton.Text = "Add";
             this.ContextMenuAddButton.Click += new System.EventHandler(this.OnAddButtonClick);
             // 
             // ContextMenuEditButton
             // 
             this.ContextMenuEditButton.Name = "ContextMenuEditButton";
-            this.ContextMenuEditButton.Size = new System.Drawing.Size(138, 22);
+            this.ContextMenuEditButton.Size = new System.Drawing.Size(164, 24);
             this.ContextMenuEditButton.Text = "Edit";
             this.ContextMenuEditButton.Click += new System.EventHandler(this.OnContextMenuEditButtonClick);
             // 
             // ContextMenuSeparator1
             // 
             this.ContextMenuSeparator1.Name = "ContextMenuSeparator1";
-            this.ContextMenuSeparator1.Size = new System.Drawing.Size(135, 6);
+            this.ContextMenuSeparator1.Size = new System.Drawing.Size(161, 6);
             // 
             // ContextMenuDeleteButton
             // 
             this.ContextMenuDeleteButton.Name = "ContextMenuDeleteButton";
-            this.ContextMenuDeleteButton.Size = new System.Drawing.Size(138, 22);
+            this.ContextMenuDeleteButton.Size = new System.Drawing.Size(164, 24);
             this.ContextMenuDeleteButton.Text = "Delete";
             this.ContextMenuDeleteButton.Click += new System.EventHandler(this.OnContextMenuDeleteButtonClick);
             // 
             // ContextMenuDisableButton
             // 
             this.ContextMenuDisableButton.Name = "ContextMenuDisableButton";
-            this.ContextMenuDisableButton.Size = new System.Drawing.Size(138, 22);
+            this.ContextMenuDisableButton.Size = new System.Drawing.Size(164, 24);
             this.ContextMenuDisableButton.Text = "Disable";
             this.ContextMenuDisableButton.Click += new System.EventHandler(this.OnContextMenuDisableButtonClick);
             // 
             // ContextMenuSeparator2
             // 
             this.ContextMenuSeparator2.Name = "ContextMenuSeparator2";
-            this.ContextMenuSeparator2.Size = new System.Drawing.Size(135, 6);
+            this.ContextMenuSeparator2.Size = new System.Drawing.Size(161, 6);
             // 
             // ContextMenuStart
             // 
             this.ContextMenuStart.Name = "ContextMenuStart";
-            this.ContextMenuStart.Size = new System.Drawing.Size(138, 22);
+            this.ContextMenuStart.Size = new System.Drawing.Size(164, 24);
             this.ContextMenuStart.Text = "Start Process(es)";
             this.ContextMenuStart.Click += new System.EventHandler(this.OnContextMenuStartClick);
             // 
             // ContextMenuStop
             // 
             this.ContextMenuStop.Name = "ContextMenuStop";
-            this.ContextMenuStop.Size = new System.Drawing.Size(138, 22);
+            this.ContextMenuStop.Size = new System.Drawing.Size(164, 24);
             this.ContextMenuStop.Text = "Stop Process(es)";
             this.ContextMenuStop.Click += new System.EventHandler(this.OnContextMenuStopClick);
             // 
             // ContextMenuShow
             // 
             this.ContextMenuShow.Name = "ContextMenuShow";
-            this.ContextMenuShow.Size = new System.Drawing.Size(138, 22);
+            this.ContextMenuShow.Size = new System.Drawing.Size(164, 24);
             this.ContextMenuShow.Text = "Show Window(s)";
             this.ContextMenuShow.Click += new System.EventHandler(this.OnContextMenuShowClick);
             // 
@@ -287,31 +292,32 @@
             // 
             // TaskbarContextMenuStrip
             // 
+            this.TaskbarContextMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.TaskbarContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TaskbarContextMenuToggleViewButton,
             this.TaskbarContextMenuSeparator,
             this.TaskbarContextMenuExitButton});
             this.TaskbarContextMenuStrip.Name = "TaskbarContextMenuStrip";
             this.TaskbarContextMenuStrip.ShowImageMargin = false;
-            this.TaskbarContextMenuStrip.Size = new System.Drawing.Size(110, 54);
+            this.TaskbarContextMenuStrip.Size = new System.Drawing.Size(129, 58);
             // 
             // TaskbarContextMenuToggleViewButton
             // 
             this.TaskbarContextMenuToggleViewButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TaskbarContextMenuToggleViewButton.Name = "TaskbarContextMenuToggleViewButton";
-            this.TaskbarContextMenuToggleViewButton.Size = new System.Drawing.Size(109, 22);
+            this.TaskbarContextMenuToggleViewButton.Size = new System.Drawing.Size(128, 24);
             this.TaskbarContextMenuToggleViewButton.Text = "Show/Hide";
             this.TaskbarContextMenuToggleViewButton.Click += new System.EventHandler(this.OnTaskbarContextMenuToggleViewButtonClick);
             // 
             // TaskbarContextMenuSeparator
             // 
             this.TaskbarContextMenuSeparator.Name = "TaskbarContextMenuSeparator";
-            this.TaskbarContextMenuSeparator.Size = new System.Drawing.Size(106, 6);
+            this.TaskbarContextMenuSeparator.Size = new System.Drawing.Size(125, 6);
             // 
             // TaskbarContextMenuExitButton
             // 
             this.TaskbarContextMenuExitButton.Name = "TaskbarContextMenuExitButton";
-            this.TaskbarContextMenuExitButton.Size = new System.Drawing.Size(109, 22);
+            this.TaskbarContextMenuExitButton.Size = new System.Drawing.Size(128, 24);
             this.TaskbarContextMenuExitButton.Text = "Exit";
             this.TaskbarContextMenuExitButton.Click += new System.EventHandler(this.OnTaskbarContextMenuExitButtonClick);
             // 
@@ -346,7 +352,8 @@
             legend1.IsTextAutoFit = false;
             legend1.Name = "metricsLegend";
             this.MetricsChart.Legends.Add(legend1);
-            this.MetricsChart.Location = new System.Drawing.Point(0, 251);
+            this.MetricsChart.Location = new System.Drawing.Point(0, 309);
+            this.MetricsChart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MetricsChart.Name = "MetricsChart";
             this.MetricsChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             this.MetricsChart.PaletteCustomColors = new System.Drawing.Color[] {
@@ -377,21 +384,22 @@
             this.MetricsChart.Series.Add(series1);
             this.MetricsChart.Series.Add(series2);
             this.MetricsChart.Series.Add(series3);
-            this.MetricsChart.Size = new System.Drawing.Size(499, 126);
+            this.MetricsChart.Size = new System.Drawing.Size(665, 155);
             this.MetricsChart.TabIndex = 0;
             this.MetricsChart.TabStop = false;
             this.MetricsChart.Text = "Machine Metrics";
             // 
             // MainDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(499, 399);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(665, 491);
             this.Controls.Add(this.MetricsChart);
             this.Controls.Add(this.ProcessListView);
             this.Controls.Add(this.MenuStrip);
             this.Controls.Add(this.StatusStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainDialog";
             this.Text = "OpenRoC";
             this.StatusStrip.ResumeLayout(false);

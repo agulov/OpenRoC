@@ -38,11 +38,12 @@
             // 
             this.AboutRichTextBox.BackColor = System.Drawing.SystemColors.Control;
             this.AboutRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AboutRichTextBox.Location = new System.Drawing.Point(12, 115);
+            this.AboutRichTextBox.Location = new System.Drawing.Point(16, 142);
+            this.AboutRichTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AboutRichTextBox.Name = "AboutRichTextBox";
             this.AboutRichTextBox.ReadOnly = true;
             this.AboutRichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.AboutRichTextBox.Size = new System.Drawing.Size(528, 170);
+            this.AboutRichTextBox.Size = new System.Drawing.Size(704, 209);
             this.AboutRichTextBox.TabIndex = 0;
             this.AboutRichTextBox.TabStop = false;
             this.AboutRichTextBox.Text = resources.GetString("AboutRichTextBox.Text");
@@ -53,8 +54,9 @@
             this.title.Dock = System.Windows.Forms.DockStyle.Top;
             this.title.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.title.Location = new System.Drawing.Point(0, 0);
+            this.title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(552, 64);
+            this.title.Size = new System.Drawing.Size(736, 79);
             this.title.TabIndex = 1;
             this.title.Text = "OpenRoC";
             this.title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -63,23 +65,25 @@
             // 
             this.caption.Dock = System.Windows.Forms.DockStyle.Top;
             this.caption.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.caption.Location = new System.Drawing.Point(0, 64);
+            this.caption.Location = new System.Drawing.Point(0, 79);
+            this.caption.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.caption.Name = "caption";
-            this.caption.Size = new System.Drawing.Size(552, 39);
+            this.caption.Size = new System.Drawing.Size(736, 48);
             this.caption.TabIndex = 2;
             this.caption.Text = "Open-source Restart on Crash";
             this.caption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AboutDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 297);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(736, 366);
             this.Controls.Add(this.caption);
             this.Controls.Add(this.title);
             this.Controls.Add(this.AboutRichTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "AboutDialog";
             this.Text = "About";

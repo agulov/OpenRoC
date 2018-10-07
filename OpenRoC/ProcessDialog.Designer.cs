@@ -85,18 +85,21 @@
             this.MonitorThisProcessGroup.Controls.Add(this.ProcessExecutablePathLabel);
             this.MonitorThisProcessGroup.Controls.Add(this.ProcessOptionWorkingDirectoryControl);
             this.MonitorThisProcessGroup.Controls.Add(this.ProcessOptionPathControl);
-            this.MonitorThisProcessGroup.Location = new System.Drawing.Point(12, 6);
+            this.MonitorThisProcessGroup.Location = new System.Drawing.Point(16, 7);
+            this.MonitorThisProcessGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MonitorThisProcessGroup.Name = "MonitorThisProcessGroup";
-            this.MonitorThisProcessGroup.Size = new System.Drawing.Size(460, 116);
+            this.MonitorThisProcessGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MonitorThisProcessGroup.Size = new System.Drawing.Size(613, 143);
             this.MonitorThisProcessGroup.TabIndex = 0;
             this.MonitorThisProcessGroup.TabStop = false;
             this.MonitorThisProcessGroup.Text = "Monitor this process";
             // 
             // SelectWorkingDirectory
             // 
-            this.SelectWorkingDirectory.Location = new System.Drawing.Point(156, 79);
+            this.SelectWorkingDirectory.Location = new System.Drawing.Point(208, 97);
+            this.SelectWorkingDirectory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SelectWorkingDirectory.Name = "SelectWorkingDirectory";
-            this.SelectWorkingDirectory.Size = new System.Drawing.Size(148, 23);
+            this.SelectWorkingDirectory.Size = new System.Drawing.Size(197, 28);
             this.SelectWorkingDirectory.TabIndex = 5;
             this.SelectWorkingDirectory.Text = "Select Working Directory";
             this.SelectWorkingDirectory.UseVisualStyleBackColor = true;
@@ -104,9 +107,10 @@
             // 
             // SelectExecutablePath
             // 
-            this.SelectExecutablePath.Location = new System.Drawing.Point(312, 79);
+            this.SelectExecutablePath.Location = new System.Drawing.Point(416, 97);
+            this.SelectExecutablePath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SelectExecutablePath.Name = "SelectExecutablePath";
-            this.SelectExecutablePath.Size = new System.Drawing.Size(140, 23);
+            this.SelectExecutablePath.Size = new System.Drawing.Size(187, 28);
             this.SelectExecutablePath.TabIndex = 4;
             this.SelectExecutablePath.Text = "Select Executable Path";
             this.SelectExecutablePath.UseVisualStyleBackColor = true;
@@ -115,33 +119,37 @@
             // ProcessWorkingDirectoryLabel
             // 
             this.ProcessWorkingDirectoryLabel.AutoSize = true;
-            this.ProcessWorkingDirectoryLabel.Location = new System.Drawing.Point(7, 53);
+            this.ProcessWorkingDirectoryLabel.Location = new System.Drawing.Point(9, 65);
+            this.ProcessWorkingDirectoryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProcessWorkingDirectoryLabel.Name = "ProcessWorkingDirectoryLabel";
-            this.ProcessWorkingDirectoryLabel.Size = new System.Drawing.Size(92, 13);
+            this.ProcessWorkingDirectoryLabel.Size = new System.Drawing.Size(121, 17);
             this.ProcessWorkingDirectoryLabel.TabIndex = 3;
             this.ProcessWorkingDirectoryLabel.Text = "Working Directory";
             // 
             // ProcessExecutablePathLabel
             // 
             this.ProcessExecutablePathLabel.AutoSize = true;
-            this.ProcessExecutablePathLabel.Location = new System.Drawing.Point(7, 24);
+            this.ProcessExecutablePathLabel.Location = new System.Drawing.Point(9, 30);
+            this.ProcessExecutablePathLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProcessExecutablePathLabel.Name = "ProcessExecutablePathLabel";
-            this.ProcessExecutablePathLabel.Size = new System.Drawing.Size(85, 13);
+            this.ProcessExecutablePathLabel.Size = new System.Drawing.Size(110, 17);
             this.ProcessExecutablePathLabel.TabIndex = 2;
             this.ProcessExecutablePathLabel.Text = "Executable Path";
             // 
             // ProcessOptionWorkingDirectoryControl
             // 
-            this.ProcessOptionWorkingDirectoryControl.Location = new System.Drawing.Point(102, 50);
+            this.ProcessOptionWorkingDirectoryControl.Location = new System.Drawing.Point(136, 62);
+            this.ProcessOptionWorkingDirectoryControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionWorkingDirectoryControl.Name = "ProcessOptionWorkingDirectoryControl";
-            this.ProcessOptionWorkingDirectoryControl.Size = new System.Drawing.Size(349, 20);
+            this.ProcessOptionWorkingDirectoryControl.Size = new System.Drawing.Size(464, 22);
             this.ProcessOptionWorkingDirectoryControl.TabIndex = 1;
             // 
             // ProcessOptionPathControl
             // 
-            this.ProcessOptionPathControl.Location = new System.Drawing.Point(102, 20);
+            this.ProcessOptionPathControl.Location = new System.Drawing.Point(136, 25);
+            this.ProcessOptionPathControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionPathControl.Name = "ProcessOptionPathControl";
-            this.ProcessOptionPathControl.Size = new System.Drawing.Size(349, 20);
+            this.ProcessOptionPathControl.Size = new System.Drawing.Size(464, 22);
             this.ProcessOptionPathControl.TabIndex = 0;
             // 
             // ProcessCrashAssumptionsGroup
@@ -154,9 +162,11 @@
             this.ProcessCrashAssumptionsGroup.Controls.Add(this.ProcessOptionDoubleCheckEnabledControl);
             this.ProcessCrashAssumptionsGroup.Controls.Add(this.ProcessOptionCrashedIfUnresponsiveControl);
             this.ProcessCrashAssumptionsGroup.Controls.Add(this.ProcessOptionCrashedIfNotRunningControl);
-            this.ProcessCrashAssumptionsGroup.Location = new System.Drawing.Point(12, 127);
+            this.ProcessCrashAssumptionsGroup.Location = new System.Drawing.Point(16, 156);
+            this.ProcessCrashAssumptionsGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessCrashAssumptionsGroup.Name = "ProcessCrashAssumptionsGroup";
-            this.ProcessCrashAssumptionsGroup.Size = new System.Drawing.Size(460, 126);
+            this.ProcessCrashAssumptionsGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProcessCrashAssumptionsGroup.Size = new System.Drawing.Size(613, 155);
             this.ProcessCrashAssumptionsGroup.TabIndex = 1;
             this.ProcessCrashAssumptionsGroup.TabStop = false;
             this.ProcessCrashAssumptionsGroup.Text = "Assume process has crashed or hung when";
@@ -164,41 +174,46 @@
             // PostCrashWaitEnabledLabel
             // 
             this.PostCrashWaitEnabledLabel.AutoSize = true;
-            this.PostCrashWaitEnabledLabel.Location = new System.Drawing.Point(138, 93);
+            this.PostCrashWaitEnabledLabel.Location = new System.Drawing.Point(184, 114);
+            this.PostCrashWaitEnabledLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PostCrashWaitEnabledLabel.Name = "PostCrashWaitEnabledLabel";
-            this.PostCrashWaitEnabledLabel.Size = new System.Drawing.Size(247, 13);
+            this.PostCrashWaitEnabledLabel.Size = new System.Drawing.Size(331, 17);
             this.PostCrashWaitEnabledLabel.TabIndex = 7;
             this.PostCrashWaitEnabledLabel.Text = "seconds after a crash before attempting a relaunch";
             // 
             // PostCrashCheckEnabledLabel
             // 
             this.PostCrashCheckEnabledLabel.AutoSize = true;
-            this.PostCrashCheckEnabledLabel.Location = new System.Drawing.Point(138, 70);
+            this.PostCrashCheckEnabledLabel.Location = new System.Drawing.Point(184, 86);
+            this.PostCrashCheckEnabledLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PostCrashCheckEnabledLabel.Name = "PostCrashCheckEnabledLabel";
-            this.PostCrashCheckEnabledLabel.Size = new System.Drawing.Size(210, 13);
+            this.PostCrashCheckEnabledLabel.Size = new System.Drawing.Size(277, 17);
             this.PostCrashCheckEnabledLabel.TabIndex = 6;
             this.PostCrashCheckEnabledLabel.Text = "seconds and double check if unresponsive";
             // 
             // ProcessOptionGracePeriodDurationControl
             // 
-            this.ProcessOptionGracePeriodDurationControl.Location = new System.Drawing.Point(57, 91);
+            this.ProcessOptionGracePeriodDurationControl.Location = new System.Drawing.Point(76, 112);
+            this.ProcessOptionGracePeriodDurationControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionGracePeriodDurationControl.Name = "ProcessOptionGracePeriodDurationControl";
-            this.ProcessOptionGracePeriodDurationControl.Size = new System.Drawing.Size(75, 20);
+            this.ProcessOptionGracePeriodDurationControl.Size = new System.Drawing.Size(99, 22);
             this.ProcessOptionGracePeriodDurationControl.TabIndex = 5;
             // 
             // ProcessOptionDoubleCheckDurationControl
             // 
-            this.ProcessOptionDoubleCheckDurationControl.Location = new System.Drawing.Point(57, 67);
+            this.ProcessOptionDoubleCheckDurationControl.Location = new System.Drawing.Point(76, 82);
+            this.ProcessOptionDoubleCheckDurationControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionDoubleCheckDurationControl.Name = "ProcessOptionDoubleCheckDurationControl";
-            this.ProcessOptionDoubleCheckDurationControl.Size = new System.Drawing.Size(75, 20);
+            this.ProcessOptionDoubleCheckDurationControl.Size = new System.Drawing.Size(99, 22);
             this.ProcessOptionDoubleCheckDurationControl.TabIndex = 3;
             // 
             // ProcessOptionGracePeriodEnabledControl
             // 
             this.ProcessOptionGracePeriodEnabledControl.AutoSize = true;
-            this.ProcessOptionGracePeriodEnabledControl.Location = new System.Drawing.Point(10, 92);
+            this.ProcessOptionGracePeriodEnabledControl.Location = new System.Drawing.Point(13, 113);
+            this.ProcessOptionGracePeriodEnabledControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionGracePeriodEnabledControl.Name = "ProcessOptionGracePeriodEnabledControl";
-            this.ProcessOptionGracePeriodEnabledControl.Size = new System.Drawing.Size(48, 17);
+            this.ProcessOptionGracePeriodEnabledControl.Size = new System.Drawing.Size(58, 21);
             this.ProcessOptionGracePeriodEnabledControl.TabIndex = 4;
             this.ProcessOptionGracePeriodEnabledControl.Text = "Wait";
             this.ProcessOptionGracePeriodEnabledControl.UseVisualStyleBackColor = true;
@@ -207,9 +222,10 @@
             // ProcessOptionDoubleCheckEnabledControl
             // 
             this.ProcessOptionDoubleCheckEnabledControl.AutoSize = true;
-            this.ProcessOptionDoubleCheckEnabledControl.Location = new System.Drawing.Point(10, 69);
+            this.ProcessOptionDoubleCheckEnabledControl.Location = new System.Drawing.Point(13, 85);
+            this.ProcessOptionDoubleCheckEnabledControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionDoubleCheckEnabledControl.Name = "ProcessOptionDoubleCheckEnabledControl";
-            this.ProcessOptionDoubleCheckEnabledControl.Size = new System.Drawing.Size(48, 17);
+            this.ProcessOptionDoubleCheckEnabledControl.Size = new System.Drawing.Size(58, 21);
             this.ProcessOptionDoubleCheckEnabledControl.TabIndex = 2;
             this.ProcessOptionDoubleCheckEnabledControl.Text = "Wait";
             this.ProcessOptionDoubleCheckEnabledControl.UseVisualStyleBackColor = true;
@@ -218,9 +234,10 @@
             // ProcessOptionCrashedIfUnresponsiveControl
             // 
             this.ProcessOptionCrashedIfUnresponsiveControl.AutoSize = true;
-            this.ProcessOptionCrashedIfUnresponsiveControl.Location = new System.Drawing.Point(10, 46);
+            this.ProcessOptionCrashedIfUnresponsiveControl.Location = new System.Drawing.Point(13, 57);
+            this.ProcessOptionCrashedIfUnresponsiveControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionCrashedIfUnresponsiveControl.Name = "ProcessOptionCrashedIfUnresponsiveControl";
-            this.ProcessOptionCrashedIfUnresponsiveControl.Size = new System.Drawing.Size(332, 17);
+            this.ProcessOptionCrashedIfUnresponsiveControl.Size = new System.Drawing.Size(438, 21);
             this.ProcessOptionCrashedIfUnresponsiveControl.TabIndex = 1;
             this.ProcessOptionCrashedIfUnresponsiveControl.Text = "It\'s not responding to Windows messages (unresponsive window)";
             this.ProcessOptionCrashedIfUnresponsiveControl.UseVisualStyleBackColor = true;
@@ -228,9 +245,10 @@
             // ProcessOptionCrashedIfNotRunningControl
             // 
             this.ProcessOptionCrashedIfNotRunningControl.AutoSize = true;
-            this.ProcessOptionCrashedIfNotRunningControl.Location = new System.Drawing.Point(10, 23);
+            this.ProcessOptionCrashedIfNotRunningControl.Location = new System.Drawing.Point(13, 28);
+            this.ProcessOptionCrashedIfNotRunningControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionCrashedIfNotRunningControl.Name = "ProcessOptionCrashedIfNotRunningControl";
-            this.ProcessOptionCrashedIfNotRunningControl.Size = new System.Drawing.Size(232, 17);
+            this.ProcessOptionCrashedIfNotRunningControl.Size = new System.Drawing.Size(312, 21);
             this.ProcessOptionCrashedIfNotRunningControl.TabIndex = 0;
             this.ProcessOptionCrashedIfNotRunningControl.Text = "It\'s not running (e.g after a Computer restart)";
             this.ProcessOptionCrashedIfNotRunningControl.UseVisualStyleBackColor = true;
@@ -240,18 +258,21 @@
             this.ProcessPreStartGroup.Controls.Add(this.ProcessOptionPreLaunchScriptButton);
             this.ProcessPreStartGroup.Controls.Add(this.ProcessOptionPreLaunchScriptPathControl);
             this.ProcessPreStartGroup.Controls.Add(this.ProcessOptionPreLaunchScriptEnabledControl);
-            this.ProcessPreStartGroup.Location = new System.Drawing.Point(12, 258);
+            this.ProcessPreStartGroup.Location = new System.Drawing.Point(16, 318);
+            this.ProcessPreStartGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessPreStartGroup.Name = "ProcessPreStartGroup";
-            this.ProcessPreStartGroup.Size = new System.Drawing.Size(460, 82);
+            this.ProcessPreStartGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProcessPreStartGroup.Size = new System.Drawing.Size(613, 101);
             this.ProcessPreStartGroup.TabIndex = 2;
             this.ProcessPreStartGroup.TabStop = false;
             this.ProcessPreStartGroup.Text = "Before process starts";
             // 
             // ProcessOptionPreLaunchScriptButton
             // 
-            this.ProcessOptionPreLaunchScriptButton.Location = new System.Drawing.Point(417, 46);
+            this.ProcessOptionPreLaunchScriptButton.Location = new System.Drawing.Point(556, 57);
+            this.ProcessOptionPreLaunchScriptButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionPreLaunchScriptButton.Name = "ProcessOptionPreLaunchScriptButton";
-            this.ProcessOptionPreLaunchScriptButton.Size = new System.Drawing.Size(34, 23);
+            this.ProcessOptionPreLaunchScriptButton.Size = new System.Drawing.Size(45, 28);
             this.ProcessOptionPreLaunchScriptButton.TabIndex = 2;
             this.ProcessOptionPreLaunchScriptButton.Text = "...";
             this.ProcessOptionPreLaunchScriptButton.UseVisualStyleBackColor = true;
@@ -259,17 +280,19 @@
             // 
             // ProcessOptionPreLaunchScriptPathControl
             // 
-            this.ProcessOptionPreLaunchScriptPathControl.Location = new System.Drawing.Point(10, 47);
+            this.ProcessOptionPreLaunchScriptPathControl.Location = new System.Drawing.Point(13, 58);
+            this.ProcessOptionPreLaunchScriptPathControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionPreLaunchScriptPathControl.Name = "ProcessOptionPreLaunchScriptPathControl";
-            this.ProcessOptionPreLaunchScriptPathControl.Size = new System.Drawing.Size(399, 20);
+            this.ProcessOptionPreLaunchScriptPathControl.Size = new System.Drawing.Size(531, 22);
             this.ProcessOptionPreLaunchScriptPathControl.TabIndex = 1;
             // 
             // ProcessOptionPreLaunchScriptEnabledControl
             // 
             this.ProcessOptionPreLaunchScriptEnabledControl.AutoSize = true;
-            this.ProcessOptionPreLaunchScriptEnabledControl.Location = new System.Drawing.Point(10, 23);
+            this.ProcessOptionPreLaunchScriptEnabledControl.Location = new System.Drawing.Point(13, 28);
+            this.ProcessOptionPreLaunchScriptEnabledControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionPreLaunchScriptEnabledControl.Name = "ProcessOptionPreLaunchScriptEnabledControl";
-            this.ProcessOptionPreLaunchScriptEnabledControl.Size = new System.Drawing.Size(200, 17);
+            this.ProcessOptionPreLaunchScriptEnabledControl.Size = new System.Drawing.Size(260, 21);
             this.ProcessOptionPreLaunchScriptEnabledControl.TabIndex = 0;
             this.ProcessOptionPreLaunchScriptEnabledControl.Text = "Execute a command (ShellExecute) :";
             this.ProcessOptionPreLaunchScriptEnabledControl.UseVisualStyleBackColor = true;
@@ -281,9 +304,11 @@
             this.PostCrashGroup.Controls.Add(this.ProcessOptionPostCrashScriptButton);
             this.PostCrashGroup.Controls.Add(this.ProcessOptionPostCrashScriptPathControl);
             this.PostCrashGroup.Controls.Add(this.ProcessOptionPostCrashScriptEnabledControl);
-            this.PostCrashGroup.Location = new System.Drawing.Point(12, 346);
+            this.PostCrashGroup.Location = new System.Drawing.Point(16, 426);
+            this.PostCrashGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PostCrashGroup.Name = "PostCrashGroup";
-            this.PostCrashGroup.Size = new System.Drawing.Size(460, 105);
+            this.PostCrashGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PostCrashGroup.Size = new System.Drawing.Size(613, 129);
             this.PostCrashGroup.TabIndex = 3;
             this.PostCrashGroup.TabStop = false;
             this.PostCrashGroup.Text = "After process stops (crashes or hangs)";
@@ -291,18 +316,20 @@
             // ProcessOptionAggressiveCleanupEnabledControl
             // 
             this.ProcessOptionAggressiveCleanupEnabledControl.AutoSize = true;
-            this.ProcessOptionAggressiveCleanupEnabledControl.Location = new System.Drawing.Point(10, 23);
+            this.ProcessOptionAggressiveCleanupEnabledControl.Location = new System.Drawing.Point(13, 28);
+            this.ProcessOptionAggressiveCleanupEnabledControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionAggressiveCleanupEnabledControl.Name = "ProcessOptionAggressiveCleanupEnabledControl";
-            this.ProcessOptionAggressiveCleanupEnabledControl.Size = new System.Drawing.Size(406, 17);
+            this.ProcessOptionAggressiveCleanupEnabledControl.Size = new System.Drawing.Size(543, 21);
             this.ProcessOptionAggressiveCleanupEnabledControl.TabIndex = 0;
             this.ProcessOptionAggressiveCleanupEnabledControl.Text = "Perform an aggressive cleanup ( useful if process spawns another child process )";
             this.ProcessOptionAggressiveCleanupEnabledControl.UseVisualStyleBackColor = true;
             // 
             // ProcessOptionPostCrashScriptButton
             // 
-            this.ProcessOptionPostCrashScriptButton.Location = new System.Drawing.Point(417, 69);
+            this.ProcessOptionPostCrashScriptButton.Location = new System.Drawing.Point(556, 85);
+            this.ProcessOptionPostCrashScriptButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionPostCrashScriptButton.Name = "ProcessOptionPostCrashScriptButton";
-            this.ProcessOptionPostCrashScriptButton.Size = new System.Drawing.Size(34, 23);
+            this.ProcessOptionPostCrashScriptButton.Size = new System.Drawing.Size(45, 28);
             this.ProcessOptionPostCrashScriptButton.TabIndex = 5;
             this.ProcessOptionPostCrashScriptButton.Text = "...";
             this.ProcessOptionPostCrashScriptButton.UseVisualStyleBackColor = true;
@@ -310,17 +337,19 @@
             // 
             // ProcessOptionPostCrashScriptPathControl
             // 
-            this.ProcessOptionPostCrashScriptPathControl.Location = new System.Drawing.Point(10, 70);
+            this.ProcessOptionPostCrashScriptPathControl.Location = new System.Drawing.Point(13, 86);
+            this.ProcessOptionPostCrashScriptPathControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionPostCrashScriptPathControl.Name = "ProcessOptionPostCrashScriptPathControl";
-            this.ProcessOptionPostCrashScriptPathControl.Size = new System.Drawing.Size(399, 20);
+            this.ProcessOptionPostCrashScriptPathControl.Size = new System.Drawing.Size(531, 22);
             this.ProcessOptionPostCrashScriptPathControl.TabIndex = 4;
             // 
             // ProcessOptionPostCrashScriptEnabledControl
             // 
             this.ProcessOptionPostCrashScriptEnabledControl.AutoSize = true;
-            this.ProcessOptionPostCrashScriptEnabledControl.Location = new System.Drawing.Point(10, 46);
+            this.ProcessOptionPostCrashScriptEnabledControl.Location = new System.Drawing.Point(13, 57);
+            this.ProcessOptionPostCrashScriptEnabledControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionPostCrashScriptEnabledControl.Name = "ProcessOptionPostCrashScriptEnabledControl";
-            this.ProcessOptionPostCrashScriptEnabledControl.Size = new System.Drawing.Size(200, 17);
+            this.ProcessOptionPostCrashScriptEnabledControl.Size = new System.Drawing.Size(260, 21);
             this.ProcessOptionPostCrashScriptEnabledControl.TabIndex = 3;
             this.ProcessOptionPostCrashScriptEnabledControl.Text = "Execute a command (ShellExecute) :";
             this.ProcessOptionPostCrashScriptEnabledControl.UseVisualStyleBackColor = true;
@@ -342,9 +371,11 @@
             this.groupBox1.Controls.Add(this.ProcessOptionCommandLineEnabledControl);
             this.groupBox1.Controls.Add(this.ProcessOptionAlwaysOnTopEnabledControl);
             this.groupBox1.Controls.Add(this.ProcessOptionScreenshotEnabledControl);
-            this.groupBox1.Location = new System.Drawing.Point(12, 457);
+            this.groupBox1.Location = new System.Drawing.Point(16, 562);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(460, 243);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(613, 299);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Miscellaneous options";
@@ -352,9 +383,10 @@
             // StartupStateDisabledControl
             // 
             this.StartupStateDisabledControl.AutoSize = true;
-            this.StartupStateDisabledControl.Location = new System.Drawing.Point(300, 182);
+            this.StartupStateDisabledControl.Location = new System.Drawing.Point(400, 224);
+            this.StartupStateDisabledControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StartupStateDisabledControl.Name = "StartupStateDisabledControl";
-            this.StartupStateDisabledControl.Size = new System.Drawing.Size(66, 17);
+            this.StartupStateDisabledControl.Size = new System.Drawing.Size(84, 21);
             this.StartupStateDisabledControl.TabIndex = 9;
             this.StartupStateDisabledControl.Text = "Disabled";
             this.StartupStateDisabledControl.UseVisualStyleBackColor = true;
@@ -362,9 +394,10 @@
             // StartupStateRunningControl
             // 
             this.StartupStateRunningControl.AutoSize = true;
-            this.StartupStateRunningControl.Location = new System.Drawing.Point(228, 182);
+            this.StartupStateRunningControl.Location = new System.Drawing.Point(304, 224);
+            this.StartupStateRunningControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StartupStateRunningControl.Name = "StartupStateRunningControl";
-            this.StartupStateRunningControl.Size = new System.Drawing.Size(65, 17);
+            this.StartupStateRunningControl.Size = new System.Drawing.Size(82, 21);
             this.StartupStateRunningControl.TabIndex = 8;
             this.StartupStateRunningControl.Text = "Running";
             this.StartupStateRunningControl.UseVisualStyleBackColor = true;
@@ -373,9 +406,10 @@
             // 
             this.StartupStateStoppedControl.AutoSize = true;
             this.StartupStateStoppedControl.Checked = true;
-            this.StartupStateStoppedControl.Location = new System.Drawing.Point(156, 182);
+            this.StartupStateStoppedControl.Location = new System.Drawing.Point(208, 224);
+            this.StartupStateStoppedControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StartupStateStoppedControl.Name = "StartupStateStoppedControl";
-            this.StartupStateStoppedControl.Size = new System.Drawing.Size(65, 17);
+            this.StartupStateStoppedControl.Size = new System.Drawing.Size(82, 21);
             this.StartupStateStoppedControl.TabIndex = 7;
             this.StartupStateStoppedControl.TabStop = true;
             this.StartupStateStoppedControl.Text = "Stopped";
@@ -385,17 +419,19 @@
             // StartupStateLabel
             // 
             this.StartupStateLabel.AutoSize = true;
-            this.StartupStateLabel.Location = new System.Drawing.Point(7, 182);
+            this.StartupStateLabel.Location = new System.Drawing.Point(9, 224);
+            this.StartupStateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StartupStateLabel.Name = "StartupStateLabel";
-            this.StartupStateLabel.Size = new System.Drawing.Size(141, 13);
+            this.StartupStateLabel.Size = new System.Drawing.Size(189, 17);
             this.StartupStateLabel.TabIndex = 13;
             this.StartupStateLabel.Text = "Initially add this process as : ";
             // 
             // ProcessOptionsCancelButton
             // 
-            this.ProcessOptionsCancelButton.Location = new System.Drawing.Point(294, 209);
+            this.ProcessOptionsCancelButton.Location = new System.Drawing.Point(392, 257);
+            this.ProcessOptionsCancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionsCancelButton.Name = "ProcessOptionsCancelButton";
-            this.ProcessOptionsCancelButton.Size = new System.Drawing.Size(75, 23);
+            this.ProcessOptionsCancelButton.Size = new System.Drawing.Size(100, 28);
             this.ProcessOptionsCancelButton.TabIndex = 11;
             this.ProcessOptionsCancelButton.Text = "Cancel";
             this.ProcessOptionsCancelButton.UseVisualStyleBackColor = true;
@@ -403,9 +439,10 @@
             // 
             // ProcessOptionsSaveButton
             // 
-            this.ProcessOptionsSaveButton.Location = new System.Drawing.Point(375, 209);
+            this.ProcessOptionsSaveButton.Location = new System.Drawing.Point(500, 257);
+            this.ProcessOptionsSaveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionsSaveButton.Name = "ProcessOptionsSaveButton";
-            this.ProcessOptionsSaveButton.Size = new System.Drawing.Size(75, 23);
+            this.ProcessOptionsSaveButton.Size = new System.Drawing.Size(100, 28);
             this.ProcessOptionsSaveButton.TabIndex = 10;
             this.ProcessOptionsSaveButton.Text = "Save";
             this.ProcessOptionsSaveButton.UseVisualStyleBackColor = true;
@@ -415,17 +452,19 @@
             // 
             this.EnvironmentVariableFormatLabel.AutoSize = true;
             this.EnvironmentVariableFormatLabel.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EnvironmentVariableFormatLabel.Location = new System.Drawing.Point(302, 94);
+            this.EnvironmentVariableFormatLabel.Location = new System.Drawing.Point(403, 116);
+            this.EnvironmentVariableFormatLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EnvironmentVariableFormatLabel.Name = "EnvironmentVariableFormatLabel";
-            this.EnvironmentVariableFormatLabel.Size = new System.Drawing.Size(145, 13);
+            this.EnvironmentVariableFormatLabel.Size = new System.Drawing.Size(192, 17);
             this.EnvironmentVariableFormatLabel.TabIndex = 10;
             this.EnvironmentVariableFormatLabel.Text = "var1=value1;var2=value2";
             // 
             // OpenScreenshotDirectoryButton
             // 
-            this.OpenScreenshotDirectoryButton.Location = new System.Drawing.Point(291, 17);
+            this.OpenScreenshotDirectoryButton.Location = new System.Drawing.Point(388, 21);
+            this.OpenScreenshotDirectoryButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OpenScreenshotDirectoryButton.Name = "OpenScreenshotDirectoryButton";
-            this.OpenScreenshotDirectoryButton.Size = new System.Drawing.Size(159, 23);
+            this.OpenScreenshotDirectoryButton.Size = new System.Drawing.Size(212, 28);
             this.OpenScreenshotDirectoryButton.TabIndex = 1;
             this.OpenScreenshotDirectoryButton.Text = "Open Screenshot Directory";
             this.OpenScreenshotDirectoryButton.UseVisualStyleBackColor = true;
@@ -433,18 +472,20 @@
             // 
             // ProcessOptionEnvironmentVariablesControl
             // 
-            this.ProcessOptionEnvironmentVariablesControl.Location = new System.Drawing.Point(10, 116);
+            this.ProcessOptionEnvironmentVariablesControl.Location = new System.Drawing.Point(13, 143);
+            this.ProcessOptionEnvironmentVariablesControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionEnvironmentVariablesControl.Multiline = true;
             this.ProcessOptionEnvironmentVariablesControl.Name = "ProcessOptionEnvironmentVariablesControl";
-            this.ProcessOptionEnvironmentVariablesControl.Size = new System.Drawing.Size(440, 57);
+            this.ProcessOptionEnvironmentVariablesControl.Size = new System.Drawing.Size(585, 69);
             this.ProcessOptionEnvironmentVariablesControl.TabIndex = 6;
             // 
             // ProcessOptionEnvironmentVariablesEnabledControl
             // 
             this.ProcessOptionEnvironmentVariablesEnabledControl.AutoSize = true;
-            this.ProcessOptionEnvironmentVariablesEnabledControl.Location = new System.Drawing.Point(10, 92);
+            this.ProcessOptionEnvironmentVariablesEnabledControl.Location = new System.Drawing.Point(13, 113);
+            this.ProcessOptionEnvironmentVariablesEnabledControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionEnvironmentVariablesEnabledControl.Name = "ProcessOptionEnvironmentVariablesEnabledControl";
-            this.ProcessOptionEnvironmentVariablesEnabledControl.Size = new System.Drawing.Size(291, 17);
+            this.ProcessOptionEnvironmentVariablesEnabledControl.Size = new System.Drawing.Size(387, 21);
             this.ProcessOptionEnvironmentVariablesEnabledControl.TabIndex = 5;
             this.ProcessOptionEnvironmentVariablesEnabledControl.Text = "Merge listed variables with system environment variables";
             this.ProcessOptionEnvironmentVariablesEnabledControl.UseVisualStyleBackColor = true;
@@ -452,17 +493,19 @@
             // 
             // ProcessOptionCommandLineControl
             // 
-            this.ProcessOptionCommandLineControl.Location = new System.Drawing.Point(133, 67);
+            this.ProcessOptionCommandLineControl.Location = new System.Drawing.Point(177, 82);
+            this.ProcessOptionCommandLineControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionCommandLineControl.Name = "ProcessOptionCommandLineControl";
-            this.ProcessOptionCommandLineControl.Size = new System.Drawing.Size(317, 20);
+            this.ProcessOptionCommandLineControl.Size = new System.Drawing.Size(421, 22);
             this.ProcessOptionCommandLineControl.TabIndex = 4;
             // 
             // ProcessOptionCommandLineEnabledControl
             // 
             this.ProcessOptionCommandLineEnabledControl.AutoSize = true;
-            this.ProcessOptionCommandLineEnabledControl.Location = new System.Drawing.Point(10, 69);
+            this.ProcessOptionCommandLineEnabledControl.Location = new System.Drawing.Point(13, 85);
+            this.ProcessOptionCommandLineEnabledControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionCommandLineEnabledControl.Name = "ProcessOptionCommandLineEnabledControl";
-            this.ProcessOptionCommandLineEnabledControl.Size = new System.Drawing.Size(123, 17);
+            this.ProcessOptionCommandLineEnabledControl.Size = new System.Drawing.Size(160, 21);
             this.ProcessOptionCommandLineEnabledControl.TabIndex = 3;
             this.ProcessOptionCommandLineEnabledControl.Text = "Pass command line :";
             this.ProcessOptionCommandLineEnabledControl.UseVisualStyleBackColor = true;
@@ -471,9 +514,10 @@
             // ProcessOptionAlwaysOnTopEnabledControl
             // 
             this.ProcessOptionAlwaysOnTopEnabledControl.AutoSize = true;
-            this.ProcessOptionAlwaysOnTopEnabledControl.Location = new System.Drawing.Point(10, 46);
+            this.ProcessOptionAlwaysOnTopEnabledControl.Location = new System.Drawing.Point(13, 57);
+            this.ProcessOptionAlwaysOnTopEnabledControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionAlwaysOnTopEnabledControl.Name = "ProcessOptionAlwaysOnTopEnabledControl";
-            this.ProcessOptionAlwaysOnTopEnabledControl.Size = new System.Drawing.Size(440, 17);
+            this.ProcessOptionAlwaysOnTopEnabledControl.Size = new System.Drawing.Size(586, 21);
             this.ProcessOptionAlwaysOnTopEnabledControl.TabIndex = 2;
             this.ProcessOptionAlwaysOnTopEnabledControl.Text = "Keep process always on top (experimental, conflicts with other always-on-top proc" +
     "esses)";
@@ -482,18 +526,19 @@
             // ProcessOptionScreenshotEnabledControl
             // 
             this.ProcessOptionScreenshotEnabledControl.AutoSize = true;
-            this.ProcessOptionScreenshotEnabledControl.Location = new System.Drawing.Point(10, 23);
+            this.ProcessOptionScreenshotEnabledControl.Location = new System.Drawing.Point(13, 28);
+            this.ProcessOptionScreenshotEnabledControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessOptionScreenshotEnabledControl.Name = "ProcessOptionScreenshotEnabledControl";
-            this.ProcessOptionScreenshotEnabledControl.Size = new System.Drawing.Size(249, 17);
+            this.ProcessOptionScreenshotEnabledControl.Size = new System.Drawing.Size(329, 21);
             this.ProcessOptionScreenshotEnabledControl.TabIndex = 0;
             this.ProcessOptionScreenshotEnabledControl.Text = "Take a screenshot of the main display on crash";
             this.ProcessOptionScreenshotEnabledControl.UseVisualStyleBackColor = true;
             // 
             // ProcessDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 711);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(645, 875);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.PostCrashGroup);
             this.Controls.Add(this.ProcessPreStartGroup);
@@ -501,6 +546,7 @@
             this.Controls.Add(this.MonitorThisProcessGroup);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "ProcessDialog";
             this.Text = "Process Options";
